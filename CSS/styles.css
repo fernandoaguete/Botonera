@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #1b1b1b;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.control-panel-container {
+    justify-content: space-around;
+    gap: 30px;
+    width: 80%;
+    min-width: 900px;
+    max-height: 70%;
+    min-height: 500px;
+    padding: 30px;
+    border-radius: 25px;
+    overflow-y: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background: url('../img/fondo.png');
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, 0px 12px 13px, 0px -3px 5px;
+}
+
+.control-panel-button {
+    width: 250px;
+    height: 125px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.control-panel-button.initial {
+    width: 450px;
+    background-color: #fdd835;
+}
+
+.control-panel-button-text {
+    font-family: 'Exo', sans-serif;
+    font-size: 23px;
+    text-align: center;
+    color: white;
+    user-select: none;
+}
+
+.control-panel-button.initial .control-panel-button-text {
+    font-weight: 500;
+    color: #1b1b1b;
+}
